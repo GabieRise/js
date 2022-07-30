@@ -1,19 +1,28 @@
 //write a program to calculate the score of a student
 function TotalScore(grade){
-    if(grade >= 75 && grade <100){
+    if(grade >= 70 && grade <=100){
         result = "A"
     }
-    else if(grade >= 65 && grade <75 ){
+    else if(grade >=68 && grade  <70){
+        result = "your score is A"
+    }
+    else if(grade >= 60 && grade <70 ){
         result = "B"
     }
-    else if(grade >= 55 && grade <65 ){
+    else if(grade >= 58 && grade <60 ){
+        result = "Your score is B"
+    }
+    else if(grade >= 50 && grade <60 ){
         result = "C"
     }
-    else if(grade >= 45 && grade <55 ){
+    else if(grade >= 48 && grade <50 ){
+        result = "Your score is C"
+    }
+    else if(grade >= 40 && grade <50 ){
         result = "D"
     }
-    else if(grade >= 40 && grade <45 ){
-        result = "E"
+    else if(grade >=38  && grade <40){
+        result = "Your score is D"
     }
     else if(grade >= 0 && grade <40 ){
         result = "F"
@@ -35,5 +44,8 @@ function score(CA1, CA2, exam){
     }
     
 }
-TotalScore(score(10, 15, 40))
-TotalScore(score(-3,-7,-8))
+TotalScore(score(10, 19, 40))
+TotalScore(score(20,5,30))
+TotalScore(score(10,8,20))
+TotalScore(score(8,10,40))
+TotalScore(score(3,7,8))
